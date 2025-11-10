@@ -59,8 +59,12 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [os.path.join(BASE_DIR, 'prima_app/templates/prima_app'),
+<<<<<<< HEAD
                  os.path.join(BASE_DIR, 'templates'),
                  os.path.join(BASE_DIR, 'seconda_app/templates/seconda_app')],
+=======
+                 os.path.join(BASE_DIR, 'templates'),os.path.join(BASE_DIR, 'seconda_app/templates/seconda_app')],
+>>>>>>> f2e412a232a1b4de1c2e8f2565d5eed2324ddf85
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
