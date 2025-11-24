@@ -1,0 +1,20 @@
+{% extends "base.html.html"%}
+{% block title%} {{block.super}} | differenza {% endblock title%}
+
+{%block content%}
+    <b>var1 = {{ n1 }} </b> <br/>
+    <b>var2 = {{ n2 }}</b> <br/>
+    <b>var3 = {{ diff }}</b> <br/>
+    {% if n1 < n2 %}
+        <p > il numero n2 è il più piccolo </i> </b>
+    {% elif n1 > n2 %}
+        <p><i>il numero n1 è il più graqnde</i></b>
+        <p><i>il numero n2 è il più piccolo</i></b>
+    {% else %}
+        <p><i>var1 è uguale a var2 </i></b>
+    {% endif %}
+    
+     
+
+    
+{%endblock content%}

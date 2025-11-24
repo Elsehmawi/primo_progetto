@@ -1,0 +1,18 @@
+{% extends "base.html"%}
+{% block title%} {{block.super}} | pari {% endblock title%}
+
+{%block content%}
+     
+    <b>var1 = {{ n1 }} </b> <br/>
+    <b>var2 = {{ n2 }} </b> <br/>
+    <b>var2 = {{ n3 }} </b> <br/>
+    <br/>
+    {% for x in list2 %}
+    <i>{{ forloop.counter }} </i>: {{ x }}<br>
+    {% if numero|divisibleby:2 %}
+     <p> il numero è pari</p>
+       {% endif %}
+
+
+    {% endfor %}
+    {%endblock content%}

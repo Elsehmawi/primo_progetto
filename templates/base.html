@@ -39,6 +39,7 @@
                         <a class="dropdown-item" href="{% url 'prima_app:welcome'%}">Welcome</a>
                         <a class="dropdown-item" href="{% url 'prima_app:lista'%}">Lista</a>
                         <a class="dropdown-item" href="{% url 'prima_app:variabili'%}">Variabili</a>
+                      
                     </div>
                 </li>
 
@@ -53,6 +54,20 @@
                         <a class="dropdown-item" href="{% url 'seconda_app:es_if'%}">Esempio If</a>
                         <a class="dropdown-item" href="{% url 'seconda_app:if_else_elif'%}">Esempio If Else e Elif</a>
                         <a class="dropdown-item" href="{% url 'seconda_app:es_for'%}">Esempio for</a>
+                         
+                    </div>
+
+                     <li class="nav-item dropdown">
+                    <!-- Dropdown terza_app app-->
+                    <a class="nav-link dropdown-toggle" href="#" id="secondaAppDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        terza_app
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="terzaAppDropdownMenuLink">
+                        <a class="dropdown-item" href="{% url 'terza_app:diff'%}">differenza</a>
+                        <a class="dropdown-item" href="{% url 'terza_app:pari'%}">pari</a>
+                         
+                         
                     </div>
                 </li>
             </ul>
